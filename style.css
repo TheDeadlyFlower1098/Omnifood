@@ -443,3 +443,49 @@ a
     vertical-align: middle; /* Align icon vertically with text */
     margin-top: -4px; /* Adjust top margin to fine-tune vertical alignment */
 }
+
+/* Styling for the testimonials section */
+.section-testimonials 
+{
+    /* Set a background image with a dark gradient overlay */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(omnifoodContents/back-customers.jpg);
+    background-size: cover; 
+    color: #fff; 
+    background-attachment: fixed; /* Fix the background image so it doesn't scroll with the content */
+}
+
+.col:first-child 
+{
+    margin-left: 0; /* Remove left margin for the first column to align it properly */
+}
+
+/* Set width for columns that span one-third of the row */
+.span-1-of-3 
+{
+    width: 32.26%; /* Define width for columns to allow three to fit in a row */
+}
+
+/* Styling for blockquotes to format testimonials */
+blockquote 
+{
+    padding: 2%; 
+    font-style: italic;
+    line-height: 145%; /* Increase line height for better readability */
+    position: relative; /* Set positioning for, possible, additional styling */
+}
+
+cite 
+{
+    font-size: 90%;
+    margin-top: 25px; /* Add space above citation */
+    display: block; /* Make citation a block element for full width */
+    margin-top: 40px; /* Increase top margin for separation from text */
+}
+
+cite img 
+{
+    height: 45px;
+    border-radius: 50%; /* Make images circular */
+    margin-right: 10px;
+    vertical-align: middle; /* Align the image vertically in line with text */
+}
