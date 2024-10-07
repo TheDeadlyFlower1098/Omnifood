@@ -24,7 +24,6 @@ header
     background-attachment: fixed;
 }
 
-
 .row 
 {
     max-width: 1140px;
@@ -44,11 +43,17 @@ h1
 {
     margin-top: 0;
     margin-bottom: 20px;
-    color: #fff;
     font-size: 240%;
     word-spacing: 4px;
     letter-spacing: 1px; 
     text-transform: uppercase;
+}
+
+h1, h2, h3 
+{
+    font-weight: 300;
+    text-transform: uppercase;
+    padding: 25px;
 }
 
 .logo 
@@ -71,7 +76,6 @@ h1
     display: inline-block;
     margin-left: 40px;
 }
-
 
 .main-nav a 
 {
@@ -111,7 +115,6 @@ h1
     color: #fff; 
     transition: background-color 0.3s, border 0.3s; /* Smooth transition for background and border */
 }
-
 
 /* For button hover and active states*/
 .btn:hover, .btn:active 
@@ -238,7 +241,6 @@ h2::after
     list-style: none; /* Removes bullets */
 }
 
-
 .meals-showcase li 
 {
     width: 25%; /* Each meal photo takes up 25% of the width in the grid. */
@@ -273,4 +275,171 @@ h2::after
 .btn, .meal-photo img 
 {
     transition: opacity 0.5s, transform 0.5s; /* Smooth transition for both elements */
+}
+
+.section-steps 
+{
+    background-color: #f4f4f4; 
+    padding: 20px; 
+}
+
+/* Clearfix to contain floated children */
+.clearfix::after 
+{
+    content: ""; /* Creates a pseudo-element that has no content */
+    clear: both; /* Ensures that the element clears any floats */
+    display: table; /* Creates a block-level element to contain floats */
+}
+
+.span-1-of-2 
+{
+    width: 49.2%; /* Span class to take up nearly half of the parent container */
+}
+
+.col 
+{
+    display: block;
+    float: left;
+    margin: 1% 0 1% 1.6%
+}
+
+.steps-box:first-child 
+{
+    text-align: right;
+    padding-right: 3%;
+    margin-top: 30px;
+}
+
+.col:first-child 
+{
+    margin-left: 0; /* Remove left margin for the first column */
+}
+
+/* App screen images */
+.app-screen 
+{
+    width: 40%; /* Set width to 40% of the parent container */
+}
+
+.steps-box:last-child 
+{
+    padding-left: 3%;
+    margin-top: 70px;
+}
+
+.works-step 
+{
+    margin-bottom: 50px;
+}
+
+/* Divs inside works-step */
+.works-step div 
+{
+    color: #e67e22; 
+    border: 2px solid #e67e22;
+    display: inline-block;
+    border-radius: 50%; /* Make the border circular */
+    height: 55px;
+    width: 55px;
+    text-align: center;
+    padding: 5px;
+    float: left;
+    font-size: 150%;
+    margin-right: 25px;
+}
+
+.btn-app:link, .btn-app:visited 
+{
+    border: 0; /* Remove any border */
+}
+
+a:link, a:visited 
+{
+    color: #e67e22;
+    text-decoration: none; /* Remove underline from links */
+    padding-bottom: 1px;
+    border-bottom: 1px solid #e67e22; /* Add a bottom border */
+    transform: border-bottom 0.2s, color 0.2s; /* Add transition effects for border and color */
+}
+
+/* General link background color */
+a 
+{
+    background-color: transparent; /* Set background color to transparent */
+}
+
+/* Styles for images in app buttons */
+.btn-app img 
+{
+    height: 50px;
+    width: auto;
+    margin-right: 10px;
+}
+
+.col:first-child 
+{
+    margin-left: 0; /* Reset margin for the first child in a column */
+}
+
+.box 
+{
+    padding: 1%; /* Padding for the boxes in the cities section */
+}
+
+.span-1-of-4 
+{
+    width: 23.8%; /* Set width to 23.8% for four columns to fit in one row */
+}
+
+.col 
+{
+    display: block;
+    float: left;
+    margin: 1% 0 1% 1.6%;
+}
+
+/* Cities section display properties */
+.section-cities 
+{
+    display: block; 
+}
+
+/* Class for elements with specific animation effects */
+.js--wp-3 
+{
+    opacity: 1; /* Ensure the opacity is fully visible when this class is applied */
+}
+
+/* Clearfix for rows to prevent overflow issues */
+.row 
+{
+    overflow: hidden; /* Clear floats within rows to prevent clipping of content */
+}
+
+/* Styling for city feature items */
+.city-feature 
+{
+    margin-bottom: 5px; /* Add space below each feature for separation */
+}
+
+/* Image styling within boxes */
+.box img 
+{
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px; /* Add space below images for visual separation */
+}
+
+/* Styling for small icons */
+.icon-small 
+{
+    display: inline-block;
+    width: 30px; 
+    text-align: center;
+    color: #e67e22;
+    font-size: 120%;
+    margin-right: 10px;
+    line-height: 120%; /* Set line height for better vertical alignment */
+    vertical-align: middle; /* Align icon vertically with text */
+    margin-top: -4px; /* Adjust top margin to fine-tune vertical alignment */
 }
