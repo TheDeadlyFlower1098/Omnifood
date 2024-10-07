@@ -489,3 +489,71 @@ cite img
     margin-right: 10px;
     vertical-align: middle; /* Align the image vertically in line with text */
 }
+
+/* Styling for the section containing the plans */
+.section-plans 
+{
+    background-color: #f4f4f4;
+}
+
+.plan-box 
+{
+    background-color: #fff;
+    border-radius: 5px; 
+    width: 90%;
+    margin-left: 5%; /* Center-align the box by adding 5% margin on the left */
+    box-shadow: 0 2px 2px #efefef;
+}
+
+/* Styling for the first div inside each plan box */
+.plan-box div:first-child 
+{
+    background-color: #fcfcfc;
+    border-top-left-radius: 5px; /* Rounded corners on the top left */
+    border-top-right-radius: 5px; /* Rounded corners on the top right */
+}
+
+.plan-box div 
+{
+    padding: 15px;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+h3 
+{
+    font-size: 110%; 
+    margin-bottom: 15px;
+}
+
+.plan-price
+{
+    font-size: 300%;
+    margin-bottom: 10px;
+    font-weight: 100;
+    color: #e67e22;
+}
+
+/* Styling for the span inside the price (e.g., "/ month") */
+.plan-price span 
+{
+    font-size: 30%;
+    font-weight: 300;
+}
+
+.plan-box ul 
+{
+    list-style: none; /* Remove default bullet points from the list */
+}
+
+.plan-box ul li 
+{
+    padding: 5px 0;
+}
+
+/* Styling for the last div inside the plan box (containing the sign-up button) */
+.plan-box div:last-child
+{
+    text-align: center;
+    border: 0; /* Remove the border for the last div */
+}
+
