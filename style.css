@@ -179,22 +179,16 @@ h2::after
 }
 
 /* JavaScript waypoints classes for animations: starts with opacity 0.*/
-.js--wp-1, .js--wp-2, .js--wp-3 
+.js--wp-2, .js--wp-3 
 {
     opacity: 0;
     animation-duration: 1s; /* Animation lasts 1 second */
 }
 
 /* When animated class is added, opacity changes to 1.*/
-.js--wp-1.animated, .js--wp-2.animated, .js--wp-3.animated 
+.js--wp-2.animated, .js--wp-3.animated 
 {
     opacity: 1;
-}
-
-/* Fade-in animation keyframes for elements */
-.fadeIn 
-{
-    animation-name: fadeIn;
 }
 
 .col 
@@ -368,7 +362,7 @@ a
     background-color: transparent; /* Set background color to transparent */
 }
 
-/* Styles for images in app buttons */
+/* Images in app buttons */
 .btn-app img 
 {
     height: 50px;
@@ -416,7 +410,7 @@ a
     overflow: hidden; /* Clear floats within rows to prevent clipping of content */
 }
 
-/* Styling for city feature items */
+/* City feature items */
 .city-feature 
 {
     margin-bottom: 5px; /* Add space below each feature for separation */
@@ -430,7 +424,7 @@ a
     margin-bottom: 15px; /* Add space below images for visual separation */
 }
 
-/* Styling for small icons */
+/* Small icons */
 .icon-small 
 {
     display: inline-block;
@@ -444,7 +438,7 @@ a
     margin-top: -4px; /* Adjust top margin to fine-tune vertical alignment */
 }
 
-/* Styling for the testimonials section */
+/*Testimonials section */
 .section-testimonials 
 {
     /* Set a background image with a dark gradient overlay */
@@ -465,7 +459,7 @@ a
     width: 32.26%; /* Define width for columns to allow three to fit in a row */
 }
 
-/* Styling for blockquotes to format testimonials */
+/* Blockquotes to format testimonials */
 blockquote 
 {
     padding: 2%; 
@@ -490,7 +484,7 @@ cite img
     vertical-align: middle; /* Align the image vertically in line with text */
 }
 
-/* Styling for the section containing the plans */
+/* Section containing the plans */
 .section-plans 
 {
     background-color: #f4f4f4;
@@ -505,7 +499,7 @@ cite img
     box-shadow: 0 2px 2px #efefef;
 }
 
-/* Styling for the first div inside each plan box */
+/* First div inside each plan box */
 .plan-box div:first-child 
 {
     background-color: #fcfcfc;
@@ -533,7 +527,7 @@ h3
     color: #e67e22;
 }
 
-/* Styling for the span inside the price (e.g., "/ month") */
+/* Span inside the price (e.g., "/ month") */
 .plan-price span 
 {
     font-size: 30%;
@@ -550,10 +544,236 @@ h3
     padding: 5px 0;
 }
 
-/* Styling for the last div inside the plan box (containing the sign-up button) */
+/* Last div inside the plan box (containing the sign-up button) */
 .plan-box div:last-child
 {
     text-align: center;
     border: 0; /* Remove the border for the last div */
+}
+
+/* Container of the map */
+.map-box 
+{
+    width: 100%;
+    height: 560px;
+    position: relative;
+}
+
+/* Map styling */
+.map 
+{
+    width: 100%; 
+    height: 560px;
+    position: relative;
+    z-index: 0; /* Stack order for the map */
+}
+
+button, select 
+{
+    text-transform: none; /* Prevent text transformation on buttons and selects */
+}
+
+/* Overflow behavior for buttons and input fields */
+button, input 
+{
+    overflow: visible; /* Allow overflow to be visible */
+}
+
+button, input, optgroup, select, textarea 
+{
+    /* tells the browser to use the same value as the property defined on the parent element. */
+    font-family: inherit; /* Inherit font family from parent */
+    font-size: 100%;
+    line-height: 1.15; /* Line height for better readability */
+    margin: 0;
+}
+
+.gm-ui-hover-effect 
+{
+    opacity: .6;
+}
+
+button, select 
+{
+    text-transform: none; /* Prevent text transformation */
+}
+
+button, input 
+{
+    overflow: visible; /* Allow overflow to be visible */
+}
+
+button, input, optgroup, select, textarea 
+{
+    font-family: inherit;
+    font-size: 100%;
+    line-height: 1.15;
+    margin: 0;
+}
+
+/* Keyboard shortcuts view container */
+.LGLeeN-keyboard-shortcuts-view 
+{
+    display: flex;
+}
+
+/* Table inside the keyboard shortcuts view */
+.LGLeeN-keyboard-shortcuts-view table 
+{
+    display: table;
+}
+
+/* Resetting styles for the keyboard shortcuts view table and its elements */
+.LGLeeN-keyboard-shortcuts-view table, .LGLeeN-keyboard-shortcuts-view tbody, .LGLeeN-keyboard-shortcuts-view td, .LGLeeN-keyboard-shortcuts-view tr 
+{
+    background: inherit; 
+    border: none; /* Remove borders */
+    margin: 0;
+    padding: 0;
+}
+
+tbody 
+{
+    display: table-row-group; /* Group rows in the table */
+    vertical-align: middle; /* Center vertical alignment */
+    unicode-bidi: isolate; /* Control the direction of text */
+    border-color: inherit; 
+}
+
+table 
+{
+    border-collapse: separate; /* Separate borders */
+    /* setting the starting indentation of the first line of a paragraph or block of text. */
+    text-indent: initial; /* Initial text indentation */
+    border-spacing: 2px; 
+}
+
+tr 
+{
+    display: table-row; /* Display as a table row */
+    vertical-align: inherit;
+    unicode-bidi: isolate; /*  Creates a new text level that isolates the text from the surrounding content's directionality. */
+    border-color: inherit;
+}
+
+/* Rows in the keyboard shortcuts view */
+.LGLeeN-keyboard-shortcuts-view tr 
+{
+    display: table-row;
+}
+
+td 
+{
+    display: table-cell; /* Display as a table cell */
+    vertical-align: inherit; 
+    unicode-bidi: isolate;
+}
+
+/* Aligning the first cell in each row to the end */
+.LGLeeN-keyboard-shortcuts-view td:first-child 
+{
+    text-align: end; /* text-align to the right */
+}
+
+/* Cell styling for keyboard shortcuts view */
+.LGLeeN-keyboard-shortcuts-view td 
+{
+    -moz-box-sizing: border-box; /* Box sizing for Firefox */
+    box-sizing: border-box; /* Box sizing for modern browsers */
+    display: table-cell; /* Display as a table cell */
+    color: #000; 
+    padding: 6px;
+    vertical-align: middle; /* Center vertical alignment */
+    white-space: nowrap; /* Prevent text wrapping */
+}
+
+kbd 
+{
+    font-family: monospace; /* Monospace font for keyboard shortcuts */
+}
+
+/* kbd elements inside the keyboard shortcuts view */
+.LGLeeN-keyboard-shortcuts-view td kbd 
+{
+    background-color: #e8eaed;
+    border-radius: 2px;
+    border: none;
+    -moz-box-sizing: border-box; /* Box sizing for Firefox */
+    box-sizing: border-box; /* Box sizing for modern browsers */
+    color: inherit;
+    display: inline-block;
+    font-family: Google Sans Text, Roboto, Arial, sans-serif;
+    line-height: 16px;
+    margin: 0 2px;
+    min-height: 20px;
+    min-width: 20px;
+    padding: 2px 4px; /* Padding inside the key */
+    position: relative;
+    text-align: center;
+}
+
+/* Google Maps style for general elements */
+.gm-style 
+{
+    font: 400 11px Roboto, Arial, sans-serif;
+    text-decoration: none;
+}
+
+/* Images inside Google Maps */
+.gm-style img 
+{
+    max-width: none; /* No maximum width restriction */
+}
+
+img 
+{
+    border-style: none;
+}
+
+/* Map area styling */
+map 
+{
+    display: inline; 
+}
+
+/* Area styling within the map */
+area 
+{
+    display: inline;
+}
+
+/* Info window container in Google Maps */
+.gm-style .gm-style-iw-a 
+{
+    position: absolute;
+    width: 100%;
+    height: 0; /* Height set to zero to hide it */
+}
+
+/* Content of the info window */
+.gm-style .gm-style-iw-c 
+{
+    position: absolute;
+    box-sizing: border-box; /* Box sizing for modern browsers */
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    transform: translate3d(-50%, -100%, 0); /* Transform for positioning */
+    background-color: white; 
+    border-radius: 8px;
+    padding: 12px;
+    box-shadow: 0 2px 7px 1px rgba(0, 0, 0, .3); /* Shadow effect */
+    display: flex;
+   -webkit-box-orient: vertical; /* The flex items will be arranged in a column.*/
+   -webkit-box-direction: normal; /* The items will be displayed in the order they are specified in the HTML (top to bottom in this case) */
+   -webkit-flex-direction: column; /* the flex items will be stacked vertically within the flex container*/
+   flex-direction: column; /* It overrides the default layout direction (row) to arrange items in a column. */
+   
+}
+
+/* Hover effect for Google Maps UI elements */
+.gm-ui-hover-effect>span 
+{
+    background-color: #000;
 }
 
