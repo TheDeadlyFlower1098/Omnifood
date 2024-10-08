@@ -777,3 +777,76 @@ area
     background-color: #000;
 }
 
+.form-box 
+{
+    position: absolute;
+    top: 20px;
+    left: 75%;
+    transform: translateX(-50%);
+    z-index: 10; /* Ensure it is above other elements */
+    padding: 20px; 
+    border-radius: 8px;
+}
+
+/* Optional: If you want to make sure the map has a lower z-index */
+.map {
+    position: relative; /* Make sure the map has a stacking context */
+    z-index: 1; /* Lower z-index to sit below the form */
+}
+
+
+footer 
+{
+    background-color: #333; 
+    padding: 50px;
+    font-size: 80%;
+}
+
+/* Class for half-width columns */
+.span-1-of-2 
+{
+    width: 49.2%; /* Set width to just under half to allow for spacing */
+}
+
+/* Remove left margin for the first child of columns */
+.col:first-child 
+{
+    margin-left: 0;
+}
+
+/* Footer navigation & Social links list*/
+.footer-nav, .social-links
+{
+    list-style: none; /* Remove default list styling */
+    float: left; /* Align navigation to the left */
+}
+
+/* List items in the footer navigation and social links */
+.footer-nav li, .social-links li 
+{
+    display: inline-block; /* Display items in a horizontal line */
+    margin-right: 20px;
+}
+
+/* Links in the footer navigation and social links */
+.footer-nav li a:link, .footer-nav li a:visited, .social-links li a:link, .social-links li a:visited 
+{
+    text-decoration: none; /* Remove underline from links */
+    border: 0; 
+    color: #888;
+    transition: color 0.2s; /* Smooth color transition on hover */
+}
+
+/* Social media icons with transition effect */
+.ion-social-facebook, .ion-social-twitter, .ion-social-googleplus, .ion-social-instagram 
+{
+    transition: color 0.2s;
+}
+
+/* Paragraph text within the footer */
+footer p 
+{
+    color: #888; 
+    text-align: center;
+    margin-top: 20px;
+}
